@@ -1,0 +1,36 @@
+[
+  {
+    "dni": 33333333,
+    "apellido": "López",
+    "nombre": "María",
+    "nroAfiliado": "afiliado-3",
+    "cuil": 233333330,
+    "obraSocial": {
+      "idObraSocial": 3,
+      "nombreObraSocial": "PAMI"
+    },
+    "domicilio": {
+      "idDomicilio": 3,
+      "calle": "Av. 789",
+      "nroCalle": "678",
+      "localidad": "Rosario"
+    }
+  },
+  {
+    "dni": 44444444,
+    "apellido": "Fernández",
+    "nombre": "Carlos",
+    "nroAfiliado": "afiliado-4",
+    "cuil": 244444444,
+    "obraSocial": {
+      "idObraSocial": 4,
+      "nombreObraSocial": "Galeno"
+    },
+    "domicilio": {
+      "idDomicilio": 4,
+      "calle": "Calle 456",
+      "nroCalle": "78",
+      "localidad": "CABA"
+    }
+  }
+]
