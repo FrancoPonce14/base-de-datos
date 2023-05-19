@@ -60,13 +60,38 @@ public class Main {
 		lstDetalleVenta.add(new DetalleVenta(cremaFacial, 1, 200, 200 * 2));
 		Venta venta = new Venta("0001-00001234", LocalDate.now(), 500f, "FormaPago-TARJETA", empleado1, empleado2,
 				sucursal, lstDetalleVenta);
+		// Creamos una venta 2
+		List<DetalleVenta> lstDetalleVenta2 = new ArrayList<DetalleVenta>();
+		lstDetalleVenta2.add(new DetalleVenta(perfume, 1, 350, 350 * 1));
+		lstDetalleVenta2.add(new DetalleVenta(ibuprofeno, 3, 100, 100 * 3));
+		Venta venta2 = new Venta("0002-00003456", LocalDate.now(), 950f, "FormaPago-TRANSFERENCIA", empleado1, empleado2, sucursal, lstDetalleVenta2);
+
+		// Creamos una venta 3
+		List<DetalleVenta> lstDetalleVenta3 = new ArrayList<DetalleVenta>();
+		lstDetalleVenta3.add(new DetalleVenta(champu, 2, 120, 120 * 2));
+		lstDetalleVenta3.add(new DetalleVenta(maquillaje, 1, 400, 400 * 1));
+		lstDetalleVenta3.add(new DetalleVenta(vendas, 5, 50, 50 * 5));
+		Venta venta3 = new Venta("0003-00005678", LocalDate.now(), 1100f, "FormaPago-EFECTIVO", empleado2, empleado1, sucursal, lstDetalleVenta3);
+
+		// Creamos una venta 4
+		List<DetalleVenta> lstDetalleVenta4 = new ArrayList<DetalleVenta>();
+		lstDetalleVenta4.add(new DetalleVenta(locionCorporal, 3, 180, 180 * 3));
+		lstDetalleVenta4.add(new DetalleVenta(cremaFacial, 2, 200, 200 * 2));
+		lstDetalleVenta4.add(new DetalleVenta(maquillaje, 1, 400, 400 * 1));
+		lstDetalleVenta4.add(new DetalleVenta(perfume, 1, 350, 350 * 1));
+		Venta venta4 = new Venta("0004-00009876", LocalDate.now(), 1700f, "FormaPago-TARJETA", empleado2, empleado1, sucursal, lstDetalleVenta4);
 
 		System.out.println("JSON VENTAS-----------------------------");
 		Gson gson = new GsonBuilder().registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).setPrettyPrinting().create();
-		final String ventasJSON = gson.toJson(venta);
+		List<Venta> listaVentas = new ArrayList<Venta>();
+		listaVentas.add(venta);
+		listaVentas.add(venta2);
+		listaVentas.add(venta3);
+		listaVentas.add(venta4);
+		final String ventasJSON = gson.toJson(listaVentas);
 		System.out.println(ventasJSON);
 
-		try {
+		/*try {
 			FileWriter myWriter = new FileWriter("ventas.json");
 			myWriter.write(ventasJSON);
 			myWriter.close();
@@ -74,7 +99,7 @@ public class Main {
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
-		}
+		}*/
 
 	}
 	
