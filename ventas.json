@@ -1,75 +1,10 @@
-{
-  "nroTicket": "0001-00001234",
-  "fecha": "2023-05-19",
-  "totalVenta": 500.0,
-  "formaDePago": "FormaPago-TARJETA",
-  "empleadoCaja": {
-    "dni": 33333333,
-    "apellido": "López",
-    "nombre": "María",
-    "nroAfiliado": "afiliado-3",
-    "cuil": 233333330,
-    "obraSocial": {
-      "idObraSocial": 3,
-      "nombreObraSocial": "PAMI"
-    },
-    "domicilio": {
-      "idDomicilio": 3,
-      "calle": "Av. 789",
-      "nroCalle": "678",
-      "localidad": "Rosario"
-    }
-  },
-  "empleadoVenta": {
-    "dni": 44444444,
-    "apellido": "Fernández",
-    "nombre": "Carlos",
-    "nroAfiliado": "afiliado-4",
-    "cuil": 244444444,
-    "obraSocial": {
-      "idObraSocial": 4,
-      "nombreObraSocial": "Galeno"
-    },
-    "domicilio": {
-      "idDomicilio": 4,
-      "calle": "Calle 456",
-      "nroCalle": "78",
-      "localidad": "CABA"
-    }
-  },
-  "lstProductos": [
-    {
-      "producto": {
-        "idProducto": 1,
-        "descripcion": "Medicamento-Paracetamol",
-        "precio": 1234.0,
-        "laboratorio": {
-          "idLaboratorio": 1
-        },
-        "esPerfumeria": false
-      },
-      "cantidad": 2,
-      "precioUnitario": 150.0,
-      "total": 300.0
-    },
-    {
-      "producto": {
-        "idProducto": 2,
-        "descripcion": "Perfumería",
-        "precio": 5678.0,
-        "laboratorio": {
-          "idLaboratorio": 2
-        },
-        "esPerfumeria": true
-      },
-      "cantidad": 1,
-      "precioUnitario": 200.0,
-      "total": 400.0
-    }
-  ],
-  "sucursal": {
-    "idSucursal": 1,
-    "empleadoACargo": {
+[
+  {
+    "nroTicket": "0001-00001234",
+    "fecha": "2023-05-19",
+    "totalVenta": 500.0,
+    "formaDePago": "FormaPago-TARJETA",
+    "empleadoCaja": {
       "dni": 33333333,
       "apellido": "López",
       "nombre": "María",
@@ -86,8 +21,56 @@
         "localidad": "Rosario"
       }
     },
-    "lstEmpleados": [
+    "empleadoVenta": {
+      "dni": 44444444,
+      "apellido": "Fernández",
+      "nombre": "Carlos",
+      "nroAfiliado": "afiliado-4",
+      "cuil": 244444444,
+      "obraSocial": {
+        "idObraSocial": 4,
+        "nombreObraSocial": "Galeno"
+      },
+      "domicilio": {
+        "idDomicilio": 4,
+        "calle": "Calle 456",
+        "nroCalle": "78",
+        "localidad": "CABA"
+      }
+    },
+    "lstProductos": [
       {
+        "producto": {
+          "idProducto": 1,
+          "descripcion": "Medicamento-Paracetamol",
+          "precio": 1234.0,
+          "laboratorio": {
+            "idLaboratorio": 1
+          },
+          "esPerfumeria": false
+        },
+        "cantidad": 2,
+        "precioUnitario": 150.0,
+        "total": 300.0
+      },
+      {
+        "producto": {
+          "idProducto": 2,
+          "descripcion": "Perfumería",
+          "precio": 5678.0,
+          "laboratorio": {
+            "idLaboratorio": 2
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 1,
+        "precioUnitario": 200.0,
+        "total": 400.0
+      }
+    ],
+    "sucursal": {
+      "idSucursal": 1,
+      "empleadoACargo": {
         "dni": 33333333,
         "apellido": "López",
         "nombre": "María",
@@ -104,23 +87,462 @@
           "localidad": "Rosario"
         }
       },
+      "lstEmpleados": [
+        {
+          "dni": 33333333,
+          "apellido": "López",
+          "nombre": "María",
+          "nroAfiliado": "afiliado-3",
+          "cuil": 233333330,
+          "obraSocial": {
+            "idObraSocial": 3,
+            "nombreObraSocial": "PAMI"
+          },
+          "domicilio": {
+            "idDomicilio": 3,
+            "calle": "Av. 789",
+            "nroCalle": "678",
+            "localidad": "Rosario"
+          }
+        },
+        {
+          "dni": 44444444,
+          "apellido": "Fernández",
+          "nombre": "Carlos",
+          "nroAfiliado": "afiliado-4",
+          "cuil": 244444444,
+          "obraSocial": {
+            "idObraSocial": 4,
+            "nombreObraSocial": "Galeno"
+          },
+          "domicilio": {
+            "idDomicilio": 4,
+            "calle": "Calle 456",
+            "nroCalle": "78",
+            "localidad": "CABA"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "nroTicket": "0002-00003456",
+    "fecha": "2023-05-19",
+    "totalVenta": 950.0,
+    "formaDePago": "FormaPago-TRANSFERENCIA",
+    "empleadoCaja": {
+      "dni": 33333333,
+      "apellido": "López",
+      "nombre": "María",
+      "nroAfiliado": "afiliado-3",
+      "cuil": 233333330,
+      "obraSocial": {
+        "idObraSocial": 3,
+        "nombreObraSocial": "PAMI"
+      },
+      "domicilio": {
+        "idDomicilio": 3,
+        "calle": "Av. 789",
+        "nroCalle": "678",
+        "localidad": "Rosario"
+      }
+    },
+    "empleadoVenta": {
+      "dni": 44444444,
+      "apellido": "Fernández",
+      "nombre": "Carlos",
+      "nroAfiliado": "afiliado-4",
+      "cuil": 244444444,
+      "obraSocial": {
+        "idObraSocial": 4,
+        "nombreObraSocial": "Galeno"
+      },
+      "domicilio": {
+        "idDomicilio": 4,
+        "calle": "Calle 456",
+        "nroCalle": "78",
+        "localidad": "CABA"
+      }
+    },
+    "lstProductos": [
       {
-        "dni": 44444444,
-        "apellido": "Fernández",
-        "nombre": "Carlos",
-        "nroAfiliado": "afiliado-4",
-        "cuil": 244444444,
+        "producto": {
+          "idProducto": 3,
+          "descripcion": "Perfumería",
+          "precio": 500.0,
+          "laboratorio": {
+            "idLaboratorio": 3
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 1,
+        "precioUnitario": 350.0,
+        "total": 350.0
+      },
+      {
+        "producto": {
+          "idProducto": 4,
+          "descripcion": "Medicamento-Ibuprofeno",
+          "precio": 2468.0,
+          "laboratorio": {
+            "idLaboratorio": 4
+          },
+          "esPerfumeria": false
+        },
+        "cantidad": 3,
+        "precioUnitario": 100.0,
+        "total": 300.0
+      }
+    ],
+    "sucursal": {
+      "idSucursal": 1,
+      "empleadoACargo": {
+        "dni": 33333333,
+        "apellido": "López",
+        "nombre": "María",
+        "nroAfiliado": "afiliado-3",
+        "cuil": 233333330,
         "obraSocial": {
-          "idObraSocial": 4,
-          "nombreObraSocial": "Galeno"
+          "idObraSocial": 3,
+          "nombreObraSocial": "PAMI"
         },
         "domicilio": {
-          "idDomicilio": 4,
-          "calle": "Calle 456",
-          "nroCalle": "78",
-          "localidad": "CABA"
+          "idDomicilio": 3,
+          "calle": "Av. 789",
+          "nroCalle": "678",
+          "localidad": "Rosario"
         }
+      },
+      "lstEmpleados": [
+        {
+          "dni": 33333333,
+          "apellido": "López",
+          "nombre": "María",
+          "nroAfiliado": "afiliado-3",
+          "cuil": 233333330,
+          "obraSocial": {
+            "idObraSocial": 3,
+            "nombreObraSocial": "PAMI"
+          },
+          "domicilio": {
+            "idDomicilio": 3,
+            "calle": "Av. 789",
+            "nroCalle": "678",
+            "localidad": "Rosario"
+          }
+        },
+        {
+          "dni": 44444444,
+          "apellido": "Fernández",
+          "nombre": "Carlos",
+          "nroAfiliado": "afiliado-4",
+          "cuil": 244444444,
+          "obraSocial": {
+            "idObraSocial": 4,
+            "nombreObraSocial": "Galeno"
+          },
+          "domicilio": {
+            "idDomicilio": 4,
+            "calle": "Calle 456",
+            "nroCalle": "78",
+            "localidad": "CABA"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "nroTicket": "0003-00005678",
+    "fecha": "2023-05-19",
+    "totalVenta": 1100.0,
+    "formaDePago": "FormaPago-EFECTIVO",
+    "empleadoCaja": {
+      "dni": 44444444,
+      "apellido": "Fernández",
+      "nombre": "Carlos",
+      "nroAfiliado": "afiliado-4",
+      "cuil": 244444444,
+      "obraSocial": {
+        "idObraSocial": 4,
+        "nombreObraSocial": "Galeno"
+      },
+      "domicilio": {
+        "idDomicilio": 4,
+        "calle": "Calle 456",
+        "nroCalle": "78",
+        "localidad": "CABA"
       }
-    ]
+    },
+    "empleadoVenta": {
+      "dni": 33333333,
+      "apellido": "López",
+      "nombre": "María",
+      "nroAfiliado": "afiliado-3",
+      "cuil": 233333330,
+      "obraSocial": {
+        "idObraSocial": 3,
+        "nombreObraSocial": "PAMI"
+      },
+      "domicilio": {
+        "idDomicilio": 3,
+        "calle": "Av. 789",
+        "nroCalle": "678",
+        "localidad": "Rosario"
+      }
+    },
+    "lstProductos": [
+      {
+        "producto": {
+          "idProducto": 5,
+          "descripcion": "Cuidado personal",
+          "precio": 1357.0,
+          "laboratorio": {
+            "idLaboratorio": 5
+          },
+          "esPerfumeria": false
+        },
+        "cantidad": 2,
+        "precioUnitario": 120.0,
+        "total": 240.0
+      },
+      {
+        "producto": {
+          "idProducto": 6,
+          "descripcion": "Perfumería",
+          "precio": 9999.0,
+          "laboratorio": {
+            "idLaboratorio": 6
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 1,
+        "precioUnitario": 400.0,
+        "total": 400.0
+      },
+      {
+        "producto": {
+          "idProducto": 7,
+          "descripcion": "Equipo médico",
+          "precio": 7777.0,
+          "laboratorio": {
+            "idLaboratorio": 7
+          },
+          "esPerfumeria": false
+        },
+        "cantidad": 5,
+        "precioUnitario": 50.0,
+        "total": 250.0
+      }
+    ],
+    "sucursal": {
+      "idSucursal": 1,
+      "empleadoACargo": {
+        "dni": 33333333,
+        "apellido": "López",
+        "nombre": "María",
+        "nroAfiliado": "afiliado-3",
+        "cuil": 233333330,
+        "obraSocial": {
+          "idObraSocial": 3,
+          "nombreObraSocial": "PAMI"
+        },
+        "domicilio": {
+          "idDomicilio": 3,
+          "calle": "Av. 789",
+          "nroCalle": "678",
+          "localidad": "Rosario"
+        }
+      },
+      "lstEmpleados": [
+        {
+          "dni": 33333333,
+          "apellido": "López",
+          "nombre": "María",
+          "nroAfiliado": "afiliado-3",
+          "cuil": 233333330,
+          "obraSocial": {
+            "idObraSocial": 3,
+            "nombreObraSocial": "PAMI"
+          },
+          "domicilio": {
+            "idDomicilio": 3,
+            "calle": "Av. 789",
+            "nroCalle": "678",
+            "localidad": "Rosario"
+          }
+        },
+        {
+          "dni": 44444444,
+          "apellido": "Fernández",
+          "nombre": "Carlos",
+          "nroAfiliado": "afiliado-4",
+          "cuil": 244444444,
+          "obraSocial": {
+            "idObraSocial": 4,
+            "nombreObraSocial": "Galeno"
+          },
+          "domicilio": {
+            "idDomicilio": 4,
+            "calle": "Calle 456",
+            "nroCalle": "78",
+            "localidad": "CABA"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "nroTicket": "0004-00009876",
+    "fecha": "2023-05-19",
+    "totalVenta": 1700.0,
+    "formaDePago": "FormaPago-TARJETA",
+    "empleadoCaja": {
+      "dni": 44444444,
+      "apellido": "Fernández",
+      "nombre": "Carlos",
+      "nroAfiliado": "afiliado-4",
+      "cuil": 244444444,
+      "obraSocial": {
+        "idObraSocial": 4,
+        "nombreObraSocial": "Galeno"
+      },
+      "domicilio": {
+        "idDomicilio": 4,
+        "calle": "Calle 456",
+        "nroCalle": "78",
+        "localidad": "CABA"
+      }
+    },
+    "empleadoVenta": {
+      "dni": 33333333,
+      "apellido": "López",
+      "nombre": "María",
+      "nroAfiliado": "afiliado-3",
+      "cuil": 233333330,
+      "obraSocial": {
+        "idObraSocial": 3,
+        "nombreObraSocial": "PAMI"
+      },
+      "domicilio": {
+        "idDomicilio": 3,
+        "calle": "Av. 789",
+        "nroCalle": "678",
+        "localidad": "Rosario"
+      }
+    },
+    "lstProductos": [
+      {
+        "producto": {
+          "idProducto": 8,
+          "descripcion": "Cuidado personal",
+          "precio": 8642.0,
+          "laboratorio": {
+            "idLaboratorio": 2
+          },
+          "esPerfumeria": false
+        },
+        "cantidad": 3,
+        "precioUnitario": 180.0,
+        "total": 540.0
+      },
+      {
+        "producto": {
+          "idProducto": 2,
+          "descripcion": "Perfumería",
+          "precio": 5678.0,
+          "laboratorio": {
+            "idLaboratorio": 2
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 2,
+        "precioUnitario": 200.0,
+        "total": 400.0
+      },
+      {
+        "producto": {
+          "idProducto": 6,
+          "descripcion": "Perfumería",
+          "precio": 9999.0,
+          "laboratorio": {
+            "idLaboratorio": 6
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 1,
+        "precioUnitario": 400.0,
+        "total": 400.0
+      },
+      {
+        "producto": {
+          "idProducto": 3,
+          "descripcion": "Perfumería",
+          "precio": 500.0,
+          "laboratorio": {
+            "idLaboratorio": 3
+          },
+          "esPerfumeria": true
+        },
+        "cantidad": 1,
+        "precioUnitario": 350.0,
+        "total": 350.0
+      }
+    ],
+    "sucursal": {
+      "idSucursal": 1,
+      "empleadoACargo": {
+        "dni": 33333333,
+        "apellido": "López",
+        "nombre": "María",
+        "nroAfiliado": "afiliado-3",
+        "cuil": 233333330,
+        "obraSocial": {
+          "idObraSocial": 3,
+          "nombreObraSocial": "PAMI"
+        },
+        "domicilio": {
+          "idDomicilio": 3,
+          "calle": "Av. 789",
+          "nroCalle": "678",
+          "localidad": "Rosario"
+        }
+      },
+      "lstEmpleados": [
+        {
+          "dni": 33333333,
+          "apellido": "López",
+          "nombre": "María",
+          "nroAfiliado": "afiliado-3",
+          "cuil": 233333330,
+          "obraSocial": {
+            "idObraSocial": 3,
+            "nombreObraSocial": "PAMI"
+          },
+          "domicilio": {
+            "idDomicilio": 3,
+            "calle": "Av. 789",
+            "nroCalle": "678",
+            "localidad": "Rosario"
+          }
+        },
+        {
+          "dni": 44444444,
+          "apellido": "Fernández",
+          "nombre": "Carlos",
+          "nroAfiliado": "afiliado-4",
+          "cuil": 244444444,
+          "obraSocial": {
+            "idObraSocial": 4,
+            "nombreObraSocial": "Galeno"
+          },
+          "domicilio": {
+            "idDomicilio": 4,
+            "calle": "Calle 456",
+            "nroCalle": "78",
+            "localidad": "CABA"
+          }
+        }
+      ]
+    }
   }
-}
+]

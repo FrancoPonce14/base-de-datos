@@ -91,7 +91,7 @@ public class Main {
 		final String ventasJSON = gson.toJson(listaVentas);
 		System.out.println(ventasJSON);
 
-		/*try {
+		try {
 			FileWriter myWriter = new FileWriter("ventas.json");
 			myWriter.write(ventasJSON);
 			myWriter.close();
@@ -99,7 +99,7 @@ public class Main {
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
-		}*/
+		}
 
 	}
 	
