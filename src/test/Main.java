@@ -7,6 +7,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.FileWriter; // Import the FileWriter class
 import java.io.IOException; // Import the IOException class to handle errors
+import java.lang.reflect.Type;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import model.*;
 
@@ -49,16 +52,13 @@ public class Main {
 				sucursal, lstDetalleVenta);
 
 		System.out.println("JSON SUCURSAL-----------------------------");
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		final String sucursalJSON = gson.toJson(sucursal);
-		System.out.println(sucursalJSON);
-		System.out.println("JSON EMPLEADO-----------------------------");
-		Gson gson1 = new GsonBuilder().setPrettyPrinting().create();
-		final String empleadoJSON = gson.toJson(empleadosSucursal);
-		System.out.println(empleadoJSON);
+		Gson gson = new GsonBuilder().registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).setPrettyPrinting().create();
+		final String ventasJSON = gson.toJson(venta);
+		System.out.println(ventasJSON);
+
 		try {
-			FileWriter myWriter = new FileWriter("filename.json");
-			myWriter.write(empleadoJSON);
+			FileWriter myWriter = new FileWriter("ventas.json");
+			myWriter.write(ventasJSON);
 			myWriter.close();
 			System.out.println("Successfully wrote to the file.");
 		} catch (IOException e) {
@@ -67,5 +67,7 @@ public class Main {
 		}
 
 	}
+	
+	
 
 }
