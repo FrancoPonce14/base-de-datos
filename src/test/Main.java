@@ -21,10 +21,20 @@ public class Main {
 		Laboratorio laboratorio_Bayer = new Laboratorio(1);
 		Laboratorio laboratorio_Nivea = new Laboratorio(2);
 		Laboratorio laboratorio_Chanel = new Laboratorio(3);
+		Laboratorio laboratorio_Roche = new Laboratorio(4);
+		Laboratorio laboratorio_Pantene = new Laboratorio(5);
+		Laboratorio laboratorio_Maybelline = new Laboratorio(6);
+		Laboratorio laboratorio_3M = new Laboratorio(7);
+		
 		// CREAMOS ALGUNOS PRODUCTOS
 		Producto paracetamol = new Producto(1, "Medicamento-Paracetamol", 1234, laboratorio_Bayer, false);
 		Producto cremaFacial = new Producto(2, "Perfumería", 5678, laboratorio_Nivea, true);
 		Producto perfume = new Producto(3, "Perfumería", 500, laboratorio_Chanel, true);
+		Producto ibuprofeno = new Producto(4, "Medicamento-Ibuprofeno", 2468, laboratorio_Roche, false);
+		Producto champu = new Producto(5, "Cuidado personal", 1357, laboratorio_Pantene, false);
+		Producto maquillaje = new Producto(6, "Perfumería", 9999, laboratorio_Maybelline, true);
+		Producto vendas = new Producto(7, "Equipo médico", 7777, laboratorio_3M, false);
+		Producto locionCorporal = new Producto(8, "Cuidado personal", 8642, laboratorio_Nivea, false);
 
 		// CREAMOS ALGUNOS CLIENTES
 		Cliente cliente1 = new Cliente(11111111, "Gómez", "Juan", "afiliado-1", null,
