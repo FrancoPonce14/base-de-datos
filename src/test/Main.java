@@ -51,7 +51,7 @@ public class Main {
 		Venta venta = new Venta("0001-00001234", LocalDate.now(), 500f, "FormaPago-TARJETA", empleado1, empleado2,
 				sucursal, lstDetalleVenta);
 
-		System.out.println("JSON SUCURSAL-----------------------------");
+		System.out.println("JSON VENTAS-----------------------------");
 		Gson gson = new GsonBuilder().registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).setPrettyPrinting().create();
 		final String ventasJSON = gson.toJson(venta);
 		System.out.println(ventasJSON);
